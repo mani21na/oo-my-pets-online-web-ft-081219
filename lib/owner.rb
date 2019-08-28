@@ -31,7 +31,6 @@ class Owner
   end
   
   def buy_cat(name)
-    
     a_cat = Cat.new(name, self)
     #binding.pry
   end
@@ -41,7 +40,7 @@ class Owner
   end
   
   def walk_dogs
-    Dog.all.map{|dog| dog.mood = "happy" if dog.owner == self}
+    self.dogs.map{|dog| dog.mood = "happy" if dog.owner == self}
     #self.dogs.each{|dog| dog.mood = "happy"}
   end  
   
