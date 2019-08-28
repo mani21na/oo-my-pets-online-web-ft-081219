@@ -29,7 +29,8 @@ class Owner
   
   def buy_cat(name)
     
-    #a_cat = Cat.new(name, self)
+    a_cat = Cat.new(name, self)
+    binding.pry
   end
   
   def buy_dog(name)
