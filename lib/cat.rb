@@ -2,8 +2,8 @@ require 'pry'
 
 class Cat
   # code goes here
-  attr_accessor
-  attr_reader :name, :owner, :mood
+  attr_accessor :owner, :mood
+  attr_reader :name
   
   @@all = []
   
@@ -20,10 +20,6 @@ class Cat
     end
     @owner = owner
     owner.cats << self
-  end
-  
-  def mood=(mood)
-    @mood = mood
   end
   
   def self.all 
