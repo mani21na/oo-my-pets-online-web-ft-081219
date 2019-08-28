@@ -19,7 +19,8 @@ class Owner
   
   #owner instance methods
   def cats 
-    Cat.all.select{|cat| cat.owner == self}
+#    Cat.all.select{|cat| cat.owner == self}
+      @cats
   end
   
   def dogs 
