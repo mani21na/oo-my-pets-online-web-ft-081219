@@ -54,6 +54,7 @@ class Owner
       pet.owner = nil
     end
     self.cats = []
+    self.dogs = []
     #binding.pry
   end 
   
