@@ -1,3 +1,5 @@
+require 'pry'
+
 class Cat
   # code goes here
   attr_reader :name, :owner, :mood
@@ -12,6 +14,7 @@ class Cat
   end
   
   def owner=(owner)
+    binding.pry
     @owner = owner
     owner.cats << self
   end
