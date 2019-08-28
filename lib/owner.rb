@@ -59,7 +59,6 @@ class Owner
   
   #class methods
   def self.all
-    self
     @@all
   end
   
