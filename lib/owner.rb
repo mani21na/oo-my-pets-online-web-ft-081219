@@ -40,13 +40,11 @@ class Owner
   end
   
   def walk_dogs
-    self.dogs.map{|dog| dog.mood = "happy" if dog.owner == self}
-    #self.dogs.each{|dog| dog.mood = "happy"}
+    self.dogs.map{|dog| dog.mood = "happy"}
   end  
   
   def feed_cats
-    Cat.all.map{|cat| cat.mood = "happy" if cat.owner == self}
-    #self.cats.each{|cat| cat.mood = "happy"}
+    self.cats.each{|cat| cat.mood = "happy"}
   end
   
   def sell_pets
