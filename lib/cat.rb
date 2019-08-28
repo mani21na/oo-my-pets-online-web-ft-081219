@@ -14,7 +14,7 @@ class Cat
   end
   
   def owner=(owner)
-    binding.pry
+    #binding.pry
     @owner = owner
     owner.cats << self
   end
