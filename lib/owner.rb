@@ -18,11 +18,11 @@ class Owner
   
   #owner instance methods
   def cats 
-    Cat.all.select{|cat| cat if cat.owner == self}
+    Cat.all.select{|cat| cat.owner == self}
   end
   
   def dogs 
-    Dog.all.select{|dog| dog if dog.owner == self}
+    Dog.all.select{|dog| dog.owner == self}
   end
   
   def buy_cat(name)
@@ -42,11 +42,11 @@ class Owner
   end
   
   def sell_pets
-    pet_list = []
-    pet_list << cats
-    pet_list << dogs
-    pet_list.map do |pet|
+    #pet_list = []
+    pet_list = self.dogs + self.cats
+    pet_list.each do |pet|
       pet.mood = "nervous"
+      pet.owner = nil
     end
     #binding.pry
   end 
