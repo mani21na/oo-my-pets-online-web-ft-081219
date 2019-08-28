@@ -10,16 +10,9 @@ class Cat
   def initialize(name, owner)
     @name = name
     @owner = owner
+    owner.cat << self
     @mood = "nervous"
     @@all << self
-  end
-  
-  def owner=(owner)
-    if owner.name == "Timmy"
-      binding.pry
-    end
-    @owner = owner
-    owner.cats << self
   end
   
   def self.all 
