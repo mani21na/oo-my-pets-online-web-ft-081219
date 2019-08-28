@@ -35,10 +35,12 @@ class Owner
   
   def walk_dogs
     Dog.all.map{|dog| dog.mood = "happy" if dog.owner == self}
+    #self.dogs.each{|dog| dog.mood = "happy"}
   end  
   
   def feed_cats
     Cat.all.map{|cat| cat.mood = "happy" if cat.owner == self}
+    #self.cats.each{|cat| cat.mood = "happy"}
   end
   
   def sell_pets
@@ -52,7 +54,7 @@ class Owner
   end 
   
   def list_pets
-    return "I have #{dogs.count} dog(s), and #{cats.count} cat(s)."
+    return "I have #{self.dogs.count} dog(s), and #{self.cats.count} cat(s)."
   end
   
   #class methods
