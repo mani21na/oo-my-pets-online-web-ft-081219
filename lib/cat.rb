@@ -14,6 +14,7 @@ class Cat
   end
   
   def owner=(owner)
+    if owner.name == "Timmy"
     #binding.pry
     @owner = owner
     owner.cats << self
