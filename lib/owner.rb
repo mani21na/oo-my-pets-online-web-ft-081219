@@ -54,7 +54,7 @@ class Owner
       pet.mood = "nervous"
       pet.owner = nil
     end
-    @cats = []
+    self.cats = []
     #binding.pry
   end 
   
