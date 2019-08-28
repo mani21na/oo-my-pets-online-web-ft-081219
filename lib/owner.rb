@@ -21,12 +21,13 @@ class Owner
   
   #owner instance methods
   def cats 
-#    Cat.all.select{|cat| cat.owner == self}
+      #Cat.all.select{|cat| cat.owner == self}
       @cats
   end
   
   def dogs 
-    Dog.all.select{|dog| dog.owner == self}
+     #Dog.all.select{|dog| dog.owner == self}
+     @dogs
   end
   
   def buy_cat(name)
